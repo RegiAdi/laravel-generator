@@ -8,6 +8,7 @@ class GeneratorField
 {
     /** @var string */
     public $name;
+	public $title;
     public $dbInput;
     public $htmlInput;
     public $htmlType;
@@ -22,6 +23,9 @@ class GeneratorField
     public $validations;
 
     /** @var bool */
+	public $isOrderable = true;
+	public $isExportable = true;
+	public $isPrintable = true;
     public $isSearchable = true;
     public $isFillable = true;
     public $isPrimary = false;
